@@ -51,7 +51,7 @@ fun ProductDetailsScreen(viewModel: ProductViewModel) {
     LaunchedEffect(productDetail.value) {
         isBookmarkedState.value = favorites.value.contains(productDetail.value?.id ?: -1)
     }
-    val scrollState = rememberScrollState() // اضافه کردن وضعیت اسکرول
+    val scrollState = rememberScrollState()
 
     Column(
         modifier = Modifier
@@ -94,13 +94,13 @@ fun ProductDetailsScreen(viewModel: ProductViewModel) {
             ) {
                 if (isBookmarkedState.value) {
                     Icon(
-                        painter = painterResource(id = R.drawable.baseline_bookmark_24), // Use your drawable resource
+                        painter = painterResource(id = R.drawable.baseline_bookmark_24),
                         contentDescription = "Bookmark Icon",
                         tint = iconColor
                     )
                 } else {
                     Icon(
-                        painter = painterResource(id = R.drawable.baseline_bookmark_border_24), // Use your drawable resource
+                        painter = painterResource(id = R.drawable.baseline_bookmark_border_24),
                         contentDescription = "Bookmark Icon",
                         tint = iconColor
                     )

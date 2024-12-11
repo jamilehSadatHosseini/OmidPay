@@ -4,7 +4,6 @@ package com.example.omidpaytask.presentation.product
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asFlow
 import androidx.lifecycle.viewModelScope
-import com.example.omidpaytask.domain.model.ProductsDto
 import com.example.omidpaytask.domain.model.ProductsDtoItem
 import com.example.omidpaytask.domain.useCases.UseCases
 import com.example.omidpaytask.domain.utils.ResultResponse

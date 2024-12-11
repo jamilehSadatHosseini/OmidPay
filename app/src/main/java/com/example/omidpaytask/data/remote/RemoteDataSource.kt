@@ -1,7 +1,6 @@
 package com.example.omidpaytask.data.remote
 
 import com.example.omidpaytask.domain.utils.ResultResponse
-import com.example.omidpaytask.domain.model.ProductsDto
 import com.example.omidpaytask.domain.model.ProductsDtoItem
 
 interface RemoteDataSource {

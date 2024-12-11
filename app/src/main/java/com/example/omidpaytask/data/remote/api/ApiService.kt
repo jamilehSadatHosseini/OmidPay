@@ -1,6 +1,5 @@
 package com.example.omidpaytask.data.remote.api
 
-import com.example.omidpaytask.domain.model.ProductsDto
 import com.example.omidpaytask.domain.model.ProductsDtoItem
 import retrofit2.http.GET
 import retrofit2.http.Path

@@ -13,7 +13,7 @@ import com.example.omidpaytask.presentation.product.ProductViewModel
 fun NavGraph(
     startDestination: String
 ) {
-    val viewModel: ProductViewModel = hiltViewModel() // تعریف ViewModel خارج از کامپوزبل‌ها
+    val viewModel: ProductViewModel = hiltViewModel()
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = startDestination) {
 

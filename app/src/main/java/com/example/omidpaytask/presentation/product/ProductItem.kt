@@ -74,13 +74,13 @@ fun ProductItem(
             ) {
                 if (isBookmarkedState.value) {
                     Icon(
-                        painter = painterResource(id = R.drawable.baseline_bookmark_24), // Use your drawable resource
+                        painter = painterResource(id = R.drawable.baseline_bookmark_24),
                         contentDescription = "Bookmark Icon",
                         tint = iconColor
                     )
                 } else {
                     Icon(
-                        painter = painterResource(id = R.drawable.baseline_bookmark_border_24), // Use your drawable resource
+                        painter = painterResource(id = R.drawable.baseline_bookmark_border_24),
                         contentDescription = "Bookmark Icon",
                         tint = iconColor
                     )

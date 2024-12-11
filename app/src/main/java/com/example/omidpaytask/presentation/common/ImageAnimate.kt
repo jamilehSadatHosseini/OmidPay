@@ -34,11 +34,11 @@ fun AnimatedImageScreen() {
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(id = android.R.drawable.ic_menu_camera), // Replace with your image
+            painter = painterResource(id = android.R.drawable.ic_menu_camera),
             contentDescription = "Moving Image",
             modifier = Modifier
-                .size(150.dp * imageSize) // Animate size change
-                .offset(y = imageOffset) // Animate vertical position
+                .size(150.dp * imageSize)
+                .offset(y = imageOffset)
         )
 
         Button(
