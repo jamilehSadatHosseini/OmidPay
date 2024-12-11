@@ -10,7 +10,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -49,17 +51,19 @@ fun ProductDetailsScreen(viewModel: ProductViewModel) {
     LaunchedEffect(productDetail.value) {
         isBookmarkedState.value = favorites.value.contains(productDetail.value?.id ?: -1)
     }
+    val scrollState = rememberScrollState() // اضافه کردن وضعیت اسکرول
 
     Column(
         modifier = Modifier
             .fillMaxSize()
+            .verticalScroll(scrollState)
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(324.dp)
+                .height(424.dp)
                 .clip(RoundedCornerShape(16.dp))
         ) {
 
@@ -74,7 +78,7 @@ fun ProductDetailsScreen(viewModel: ProductViewModel) {
                 contentDescription = "Product Image",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(300.dp)
+                    .height(400.dp)
                     .clip(RoundedCornerShape(16.dp)),
                 contentScale = ContentScale.Crop
             )
